@@ -19,7 +19,8 @@ pipeline {
                 DOCKER_IMAGE = "vinayjadhav/vinay-app:v1.0.0"
             }
             steps{
-                sh 'docker build -t ("${DOCKER_IMAGE}")'
+                sh 'docker build -t ${DOCKER_IMAGE}'
+
             }
         }
         
